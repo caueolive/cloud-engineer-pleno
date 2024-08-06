@@ -67,33 +67,31 @@ resource "aws_instance" "atividade1" {
 }
 ```
 
-########################################
-
 ### Recursos utilizados<a name="recursos"></a>
 
-- Configuração do provedor
+- Configuração do provedor:
 Utilizei o meu usuário da AWS - IAM, autenticado para fazer a configuração, provisionamento e destruição da instância na AWS. E para isso utilizei uma Access_key & Secret_Key.
 
-- tls_private_key
+- tls_private_key:
 Utilizei a tls_private_key para gerar uma chave privada segura e codificada no formato PEM. Este é um recurso destinado a inicializar facilmente ambientes de desenvolvimentos.
 
 RSA_4096: É o tamanho da chave RSA gerada em bits.
 
-- Variable
-Para deixar mais dinâmico o exercício foi utilizado uma variável Key_name.
+- Variable:
+Para deixar o exercício mais dinâmico foi utilizado uma variável Key_name.
 
-- Key_pair
+- Key_pair:
 A key_pair é utilizada para controlar o acesso na instância EC2.
-A chave pública utilizada é o arquivo PEM criado.
+A chave pública utilizada é o arquivo PEM.
 
-- Private_key
+- Private_key:
 Criar uma chave privada na máquina local.
 
-- aws_instance
+- aws_instance:
 Provisiona uma instância EC2. AMI ID, copiei da minha conta AWS para selecionar o sistema operacional a ser criado, nesse case o SO escolhido foi Windows.
 
 ### Destruindo a infraestrutura<a name="destruir"></a>
 
 Depois de ter executado o terraform plan, e terraform apply para provisionar a instância, na hora de deletar ela é necessário se utilizar do comando `terraform destroy`.
-Executado o comando é só aguardar a destruição da instância EC2.
+Executado o comando é só aguardar a destruição da instância EC2 na AWS.
 
