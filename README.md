@@ -1,4 +1,3 @@
-# cloud-engineer-pleno
 ## Teste Técnico Cloud Engineer
 
 Este repositório contém o código de um pequeno app de lista de tarefas. As instruções para rodar essa aplicação utilizando Docker seguem abaixo. O teste em si está no último item desse README, mas recomendamos que tente rodar a aplicação localmente antes seguindo os passos abaixo.
